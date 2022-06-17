@@ -1,0 +1,353 @@
+package copa_quiz;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class quiz {
+
+	public static void main(String[] args) {
+
+		        String resposta = "";
+		        String pergResp = "";
+		        int respostaNumeros = 0;
+		        int acertos = 0;
+		        String nome= JOptionPane.showInputDialog(null,"Digite seu nome");
+		        JOptionPane.showMessageDialog(null, "Vamos Começar A Copa! \uD83D\uDE00");
+		        List respostas = new ArrayList();
+
+		        respostas = carregaRespostas(respostas,"Brasil","Alemanha","Inglaterra","Uruguai");
+		  
+		        pergResp = "1- Qual Foi A Primeira Seleção A Conquistar A Copa Do Mundo.\n";
+		        String[] letra1 = {"A) ","B) ","C) ","D) "};
+		        for(int i = 0; i < respostas.size(); i++) {
+		        	pergResp += letra1[i] + respostas.get(i) + "\n";
+		        }
+		        resposta = JOptionPane.showInputDialog(null,pergResp);
+
+		        switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Uruguai")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Uruguai")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Uruguai")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Uruguai")) {
+			        		acertos += 1;
+			 }
+		 }
+ 
+		        respostas = carregaRespostas(respostas,"Johan Cruyff","Cafu","Maradona","Pelé");
+				  
+		        pergResp = "2- Qual Jogador Conquistou Mais Copas Ao Longo Dos Anos.\n";
+		        String[] letra2 = {"A) ","B) ","C) ","D) "};
+		        for(int i = 0; i < respostas.size(); i++) {
+		        	pergResp += letra2[i] + respostas.get(i) + "\n";
+		        }
+		        resposta = JOptionPane.showInputDialog(null,pergResp);
+
+		        switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Pelé")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Pelé")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Pelé")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Pelé")) {
+			        		acertos += 1;
+			 }
+		 }
+		        respostas = carregaRespostas(respostas,"Eua 1994","França 1998","Coreia Do Sul E Japão 2002","México 1970");
+				
+		        pergResp = "3- Qual Edição Da Copa Do Mundo Teve A Maior Média De Público De Todos Os Tempos.\n";
+			    String[] letra3 = {"A) ","B) ","C) ","D) "};
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra3[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Eua 1994")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Eua 1994")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Eua 1994")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Eua 1994")) {
+			        		acertos += 1;
+        	}
+    	}
+				respostas = carregaRespostas(respostas,"Khan(Ale)","Buffon(Ita)","Casillas(Esp)","Marcos(Bra)");
+				
+			    pergResp = "4- Apenas Um Goleiro Foi Eleito O Melhor Jogador De Uma Copa. Quem foi ele.\n";
+			    String[] letra4 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra4[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Khan(Ale)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Khan(Ale)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Khan(Ale)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Khan(Ale)")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"2 vezes","5 vezes","3 vezes","7 vezes");
+				
+			    pergResp = "5- Quantas Vezes A Africa Do Sul Jogou A Copa Do Mundo.\n";
+			    String[] letra5 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra5[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("3 vezes")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("3 vezes")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("3 vezes")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("3 vezes")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"Ronaldo Fenômeno","Diego Maradona","Miroslav Klose","Pelé");
+				
+			    pergResp = "6- Quem é o maior artilheiro de todas as copas do mundo.\n";
+			    String[] letra6 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra6[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Miroslav Klose")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Miroslav Klose")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Miroslav Klose")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Miroslav Klose")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"Hungria 10 x 1 El Salvador (1982)","Itália 11 x 0 Turquia (1986)",
+			    										"Alemanha 9 x 1 Camarões (1990)","Portugal 7 x 1 Coreia do Norte (2010)");
+				
+			    pergResp = "7- Qual Foi A Maior Goleada De Todas As Copas. \n";
+			    String[] letra7 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra7[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Hungria 10 x 1 El Salvador (1982)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Hungria 10 x 1 El Salvador (1982)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Hungria 10 x 1 El Salvador (1982)")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Hungria 10 x 1 El Salvador (1982)")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"Alemanha","Inglaterra","Suécia","Itália");
+				
+			    pergResp = "8- O Brasil Conquistou A Sua Primeira Copa Do Mundo Em 1958.\n"
+			    										+"Contra Quem Foi o Jogo Da Final.\n ";
+			    String[] letra8 = {"A) ","B) ","C) ","D) "};
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra8[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Suécia")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Suécia")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Suécia")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Suécia")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"1954","1962","1974","1934");
+				
+			    pergResp = "9- Em Qual Ano A Seleção Da Itália Ganhou A Sua Primeira Copa Do Mundo.\n";
+			    String[] letra9 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra9[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("1934")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("1934")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("1934")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("1934")) {
+			        		acertos += 1;
+		    }
+	    }
+			    respostas = carregaRespostas(respostas,"Argentina 2 x 1 Alemanha","Argentina 3 x 2 Alemanha",
+			    										"Alemanha 4 x 3 Argentina","Alemanha 1 x 0 Argentina");
+				
+			    pergResp = "10-	A final da copa de 1990 foi entre Alemanha e Argentina.\n"
+			    								   + "Qual foi o resultado desse jogo.\n";
+			    String[] letra10 = {"A) ","B) ","C) ","D) "}; 
+			    for(int i = 0; i < respostas.size(); i++) {
+			    	pergResp += letra10[i] + respostas.get(i) + "\n";
+			    }
+			    resposta = JOptionPane.showInputDialog(null,pergResp);
+			
+			    switch(resposta.toUpperCase()) {
+			        case "A":
+			        	if(respostas.get(0).equals("Alemanha 1 x 0 Argentina")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "B":
+			        	if(respostas.get(1).equals("Alemanha 1 x 0 Argentina")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "C":
+			        	if(respostas.get(2).equals("Alemanha 1 x 0 Argentina")) {
+			        		acertos += 1;
+			        	}
+			        	break;
+			        case "D":
+			        	if(respostas.get(3).equals("Alemanha 1 x 0 Argentina")) {
+			        		acertos += 1;
+		    }
+	    }
+			
+			if(acertos >= 10) {
+		JOptionPane.showMessageDialog(null,nome +" PARABENS MONSTRÃO !!! Você É Um Especialista Em Copas Do Mundo");
+			
+			}else if(acertos >= 7) {
+		JOptionPane.showMessageDialog(null,nome +" Ta Sabendo Legal !");
+			
+			}else if(acertos >= 5) {
+		JOptionPane.showMessageDialog(null,nome +" Acho Que Futebol Não É A Sua Praia ");
+			
+			}else {
+		JOptionPane.showMessageDialog(null,nome +" Vixii... Melhor Você Ir Brincar De Outra Coisa ");
+			}
+			
+		JOptionPane.showMessageDialog(null," Sua Quantidade De Acertos Foi "+acertos);
+			
+			}
+		
+		 private static List carregaRespostas(List listResp,String s1,String s2,String s3,String s4) {
+			 listResp.clear();	        
+			 listResp.add(s1);
+			 listResp.add(s2);
+			 listResp.add(s3);
+			 listResp.add(s4);
+		     Collections.shuffle(listResp);
+		     return listResp;
+		 	}
+		}
